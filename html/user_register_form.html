@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Registration</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    </head>
+    <body>
+        <div class="register">
+            <h1>Registration</h1>
+            <form action="../php/user_register.php" method="post" autocomplete="off">
+                <label for="username"><i class="fas fa-user"></i></label>
+                <!-- kein "required" bei den inputs, damit man die Fehlermeldungen sieht -->
+                <input type="text" name="username" placeholder="Benutzername" id="username">
+
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input type="password" name="password" placeholder="Passwort" id="password">
+
+                <label for="email"><i class="fas fa-envelope"></i></label>
+                <!-- habe den input type von "email" zu "text" geändert, damit man die Fehlermeldung von der E-Mail-Überprüfung sieht -->
+                <input type="text" name="email" placeholder="E-Mail" id="email">
+
+                <label for="vorname"><i class="fas fa-address-card"></i></label>
+                <input type="text" name="vorname" placeholder="Vorname" id="vorname">
+
+                <label for="name"><i class="fas fa-address-card"></i></label>
+                <input type="text" name="name" placeholder="Nachname" id="name">
+
+                <label for="gebdatum"><i class="fa fa-birthday-cake"></i></label>
+                <input type="date" name="gebdatum" placeholder="Geburtsdatum" id="gebdatum">
+
+                <label for="strasse"><i class="fas fa-address-card"></i></label>
+                <input type="text" name="strasse" placeholder="Strasse" id="name">
+
+                <label for="hausnummer"><i class="fas fa-address-card"></i></label>
+                <input type="number" name="hausnummer" placeholder="Hausnummer" id="hausnummer">
+
+                <label for="plz"><i class="fas fa-address-card"></i></label>
+                <input type="number" name="plz" placeholder="PLZ" id="plz">
+
+                <label for="ort"><i class="fas fa-address-card"></i></label>
+                <input type="text" name="ort" placeholder="Ort" id="ort">
+
+                <label for="rolle"><i class="fas fa-id-badge"></i></label>
+                <select name="rolle" id="rolle">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                </select>
+
+                <input type="submit" value="Register">
+
+                <p class="keinAccount">Sie haben bereits einen Account? <a href="login_form.html">hier anmelden</a></p>
+            </form>
+        </div>
+    </body>
+</html>
